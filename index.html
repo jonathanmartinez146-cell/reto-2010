@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reto 20/10 de 21 días gratis | Jona Master Training</title>
+<meta name="description" content="Descarga gratis el Reto 20/10: 21 días de rutinas de 20 minutos para entrenar en casa, sin equipo y sin saltos. Por Jona Master Training.">
+<meta property="og:title" content="Reto 20/10 de 21 días · Gratis">
+<meta property="og:description" content="21 días. 20 minutos. Sin equipo. Descarga tu reto y entrena en casa conmigo.">
+<meta property="og:image" content="https://jonathanmartinez146-cell.github.io/reto-2010/assets/og.jpg">
+<meta property="og:url" content="https://jonathanmartinez146-cell.github.io/reto-2010/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --or:#FA5800;--or1:#FF7F06;--or2:#F24600;
+  --bg:#070707;--s1:#111;--s2:#181818;--line:#262626;
+  --tx:#f4f4f4;--mut:#a9a9a9;--ok:#2fbf71;
+  --grad:linear-gradient(180deg,var(--or1),var(--or2));
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+.cond,h1,h2,h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.005em;line-height:.95}
+.kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);font-size:15px}
+.or{color:var(--or)}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font-family:'Barlow Condensed';font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:20px;padding:16px 26px;border-radius:12px;background:var(--grad);color:#fff;text-decoration:none;box-shadow:0 10px 30px -10px rgba(250,88,0,.7);transition:transform .15s ease,box-shadow .15s ease,filter .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(250,88,0,.85)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;border:1.5px solid #3a3a3a;box-shadow:none;color:var(--tx)}
+.btn.ghost:hover{border-color:var(--or)}
+.btn[disabled]{filter:grayscale(.4) brightness(.8);cursor:wait}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:44px;height:44px}
+.brand span{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;font-size:16px}
+.nav .btn{font-size:16px;padding:10px 18px;border-radius:10px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:url(assets/hero.jpg) 68% 30%/cover no-repeat;filter:saturate(1.05) contrast(1.05)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(70% 60% at 85% 100%,rgba(250,88,0,.35),transparent 70%),
+  linear-gradient(90deg,#070707 0%,rgba(7,7,7,.94) 38%,rgba(7,7,7,.55) 70%,rgba(7,7,7,.35) 100%),
+  linear-gradient(0deg,#070707 0%,transparent 30%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 0 80px}
+.hero h1{font-size:clamp(54px,7.4vw,104px);font-weight:800;margin:14px 0 18px}
+.hero h1 .l2{display:block}
+.hero p.sub{font-size:20px;color:#d6d6d6;max-width:540px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1px solid #333;background:rgba(17,17,17,.7);border-radius:999px;padding:7px 14px;font-weight:600;font-size:15px}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--or);display:inline-block}
+
+/* FORM */
+.formcard{scroll-margin-top:84px;background:rgba(14,14,14,.92);border:1px solid #2a2a2a;border-radius:20px;padding:30px;box-shadow:0 30px 80px -30px rgba(0,0,0,.9),0 0 0 1px rgba(250,88,0,.08) inset;position:relative}
+.formcard:before{content:"";position:absolute;inset:-1px;border-radius:21px;padding:1px;background:linear-gradient(160deg,rgba(255,127,6,.65),transparent 35%,transparent 70%,rgba(242,70,0,.45));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.formcard h2{font-size:34px;font-weight:800}
+.formcard .free{display:inline-block;background:var(--or);color:#000;font-family:'Barlow Condensed';font-weight:800;letter-spacing:.1em;font-size:13px;padding:3px 9px;border-radius:5px;margin-bottom:10px}
+.formcard p.hint{color:var(--mut);font-size:15px;margin:8px 0 18px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field label{font-size:14px;font-weight:600;color:#cfcfcf}
+.field label small{color:var(--mut);font-weight:400}
+.field input{font:inherit;font-size:17px;color:var(--tx);background:#0a0a0a;border:1.5px solid #2e2e2e;border-radius:10px;padding:13px 14px;outline:none;transition:border-color .15s,box-shadow .15s;width:100%}
+.field input:focus{border-color:var(--or);box-shadow:0 0 0 4px rgba(250,88,0,.18)}
+.field input[aria-invalid=true]{border-color:#ff4d4d}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--mut);margin:6px 0 18px;line-height:1.4}
+.consent input{margin-top:3px;accent-color:var(--or);width:17px;height:17px;flex:none}
+.formcard .btn{width:100%}
+.err{color:#ff7b7b;font-size:14px;min-height:20px;margin-top:10px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.done{display:none;text-align:left}
+.done .ok{width:56px;height:56px;border-radius:50%;background:rgba(47,191,113,.15);display:grid;place-items:center;margin-bottom:14px}
+.done h2{font-size:38px}
+.done p{color:#d0d0d0;margin:10px 0 20px}
+.done .btn{margin-bottom:12px}
+.formcard.sent form{display:none}
+.formcard.sent .done{display:block;animation:pop .4s ease}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* STRIP */
+.strip{border-block:1px solid var(--line);background:#0c0c0c}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:26px 10px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:'Barlow Condensed';font-weight:800;font-size:46px;line-height:1}
+.stat span{color:var(--mut);font-size:15px}
+
+section.blk{padding:96px 0}
+.head{max-width:720px;margin-bottom:44px}
+.head h2{font-size:clamp(40px,5.2vw,64px);font-weight:800;margin-top:10px}
+.head p{color:#cfcfcf;font-size:19px;margin-top:16px}
+
+/* 20/10 */
+.how{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.vid{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:640/622;background:#111;border:1px solid var(--line)}
+.vid video{width:100%;height:100%;object-fit:cover}
+.vid .badge{position:absolute;left:14px;top:14px;background:rgba(0,0,0,.75);border:1px solid #333;border-radius:8px;padding:6px 10px;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.1em;font-size:14px}
+.timer{display:flex;align-items:center;gap:22px;background:var(--s1);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin-bottom:22px}
+.ring{--p:0;width:118px;height:118px;border-radius:50%;flex:none;display:grid;place-items:center;background:conic-gradient(var(--c,var(--or)) calc(var(--p)*1turn),#232323 0);transition:background .2s}
+.ring div{width:96px;height:96px;border-radius:50%;background:var(--s1);display:grid;place-items:center;text-align:center}
+.ring b{font-family:'Barlow Condensed';font-weight:800;font-size:42px;line-height:1}
+.ring small{display:block;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.12em;font-size:12px;color:var(--mut)}
+.timer .txt h3{font-size:28px}
+.timer .txt p{color:var(--mut);font-size:15.5px;margin-top:4px}
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:0}
+.step b{font-family:'Barlow Condensed';font-weight:800;font-size:34px;line-height:1;color:var(--or)}
+.step h3{font-size:22px;margin-bottom:4px}
+.step p{color:#c9c9c9;font-size:16px}
+
+/* WEEKS */
+.weeks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wk{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
+.wk .n{font-family:'Barlow Condensed';font-weight:800;font-size:96px;line-height:.8;position:absolute;right:18px;top:16px;color:#1d1d1d}
+.wk .tag{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;color:var(--or);font-size:14px}
+.wk h3{font-size:32px;margin:8px 0 12px;position:relative}
+.wk p{color:#c9c9c9;font-size:16px;position:relative}
+.wk ul{list-style:none;margin-top:16px;display:grid;gap:8px;position:relative}
+.wk li{font-size:15px;color:#ddd;padding-left:18px;position:relative}
+.wk li:before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--or)}
+.wk.hot{background:linear-gradient(160deg,#1a0d05,#111 55%);border-color:#3a1d0a}
+
+/* INCLUDES */
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.mock{position:relative;height:540px}
+.mock img{position:absolute;border-radius:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.9);border:1px solid #2a2a2a;width:58%}
+.mock .m1{left:0;top:30px;transform:rotate(-5deg);z-index:2}
+.mock .m2{left:24%;top:0;transform:rotate(2deg);z-index:1;filter:brightness(.8)}
+.mock .m3{left:42%;top:70px;transform:rotate(7deg);z-index:0;filter:brightness(.65)}
+.list{list-style:none;display:grid;gap:4px}
+.list li{display:grid;grid-template-columns:36px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border-bottom:0}
+.list svg{width:26px;height:26px;color:var(--or)}
+.list b{display:block;font-size:18px}
+.list span{color:var(--mut);font-size:15.5px}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.photos img{border-radius:var(--r);width:100%;height:100%;object-fit:cover;border:1px solid var(--line)}
+.photos .p1{aspect-ratio:3/4;object-position:center 25%}
+.photos .p2{aspect-ratio:3/4;object-position:center 45%;margin-top:40px}
+.about p{color:#d0d0d0;margin-top:14px}
+.quote{margin-top:22px;border-left:3px solid var(--or);padding:6px 0 6px 18px;font-family:'Barlow Condensed';font-weight:700;font-size:26px;text-transform:uppercase;line-height:1.1}
+
+/* FAQ */
+.faq{max-width:820px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:600;font-size:19px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:'Barlow Condensed';font-weight:700;font-size:30px;color:var(--or);line-height:1;transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:#c9c9c9;margin-top:10px;font-size:16.5px}
+
+/* FINAL */
+.final{position:relative;overflow:hidden;text-align:center;padding:110px 0;background:radial-gradient(60% 80% at 50% 120%,rgba(250,88,0,.35),transparent 70%),#0a0a0a;border-top:1px solid var(--line)}
+.final h2{font-size:clamp(46px,7vw,92px);font-weight:800}
+.final p{color:#cfcfcf;font-size:19px;margin:18px auto 30px;max-width:560px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#8a8a8a;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer a{color:#cfcfcf;text-decoration:none}
+.flinks{display:flex;gap:18px}
+footer a:hover{color:var(--or)}
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25D366;display:none;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.7)}
+.wa-float svg{width:30px;height:30px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px;padding:36px 0 56px}
+  .hero:before{background-position:70% 20%;opacity:.55}
+  .hero:after{background:linear-gradient(180deg,rgba(7,7,7,.55) 0%,rgba(7,7,7,.92) 45%,#070707 100%)}
+  .how,.inc,.about{grid-template-columns:1fr;gap:36px}
+  .weeks{grid-template-columns:1fr}
+  .mock{height:420px}
+  section.blk{padding:72px 0}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .brand span{display:none}
+  .hero h1{font-size:58px}
+  .hero p.sub{font-size:18px}
+  .formcard{padding:22px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .stat b{font-size:38px}
+  .timer{flex-direction:column;align-items:flex-start}
+  .mock{height:330px}
+  .photos .p2{margin-top:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jona Master Training, inicio"><img src="assets/logo.svg" alt="Logo Jona Master Training" width="44" height="44"><span>JONA MASTER TRAINING</span></a>
+    <a class="btn" href="#formcard">Quiero el reto</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="reto">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Reto gratis · Rutinas en casa</div>
+      <h1>21 días.<span class="l2"><span class="grad">20 minutos.</span></span><span class="l2">Sin equipo.</span></h1>
+      <p class="sub">Descarga el <b>Reto 20/10</b>: un plan de 3 semanas para entrenar en casa con 20 segundos de trabajo y 10 de descanso. Pensado para gente ocupada y para principiantes.</p>
+      <div class="chips"><span class="chip"><i></i>Sin saltos</span><span class="chip"><i></i>Versión fácil y avanzada</span><span class="chip"><i></i>Calendario para marcar</span></div>
+    </div>
+
+    <div class="formcard" id="formcard">
+      <form id="leadForm" novalidate>
+        <span class="free">GRATIS</span>
+        <h2>Recibe tu Reto 20/10</h2>
+        <p class="hint">Déjame tus datos y descarga el PDF al instante.</p>
+        <div class="row2">
+          <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="given-name" required maxlength="60"></div>
+          <div class="field"><label for="apellido">Apellido</label><input id="apellido" name="apellido" autocomplete="family-name" required maxlength="60"></div>
+        </div>
+        <div class="field"><label for="whatsapp">WhatsApp</label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+56 9 1234 5678" required maxlength="25"></div>
+        <div class="field"><label for="correo">Correo <small>(opcional)</small></label><input id="correo" name="correo" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" maxlength="120"></div>
+        <div class="hp" aria-hidden="true"><label>Web <input name="web" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="origen" id="origen">
+        <label class="consent"><input type="checkbox" id="acepto" required><span>Acepto recibir rutinas y novedades de Jona Master Training. Puedo darme de baja cuando quiera.</span></label>
+        <button class="btn" type="submit" id="enviar">Quiero mi reto</button>
+        <div class="err" id="err" role="alert"></div>
+      </form>
+      <div class="done" id="done" aria-live="polite">
+        <div class="ok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2fbf71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h2>¡Listo, <span id="saludo">campeón</span>!</h2>
+        <p>Tu reto ya se está descargando. Si no partió solo, toca el botón. Te recomiendo empezar mañana con el Día 1 y el test inicial.</p>
+        <a class="btn" id="descargar" href="Reto-20-10-21-dias-Jona-Master-Training.pdf" download>Descargar el PDF</a>
+        <a class="btn ghost" id="waDone" href="#" target="_blank" rel="noopener" style="width:100%">Avísame por WhatsApp que partiste</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="stat"><b class="grad">21</b><span>rutinas guiadas</span></div>
+    <div class="stat"><b>20/10</b><span>segundos de trabajo / descanso</span></div>
+    <div class="stat"><b>0</b><span>equipos necesarios</span></div>
+    <div class="stat"><b>3</b><span>semanas con progresión</span></div>
+  </div>
+</div>
+
+<section class="blk" id="metodo">
+  <div class="wrap how">
+    <div class="vid reveal">
+      <video src="assets/clip-2010.mp4" poster="assets/clip-2010.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Jona entrenando con el método 20/10"></video>
+      <span class="badge">ASÍ SE VE UN 20/10</span>
+    </div>
+    <div class="reveal">
+      <div class="kicker">Cómo funciona</div>
+      <h2 style="font-size:clamp(40px,5.2vw,64px);font-weight:800;margin:10px 0 24px">El método <span class="or">20/10</span></h2>
+      <div class="timer" aria-hidden="true">
+        <div class="ring" id="ring"><div><span><b id="tnum">20</b><small id="tlab">ENTRENA</small></span></div></div>
+        <div class="txt"><h3 id="tt">20 segundos a fondo</h3><p>Luego 10 de descanso. Repites con el siguiente ejercicio. Simple, intenso y se adapta a tu nivel.</p></div>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01</b><div><h3>Calienta 4 minutos</h3><p>Siempre la misma rutina para despertar el cuerpo.</p></div></div>
+        <div class="step"><b>02</b><div><h3>Haz los bloques del día</h3><p>4 ejercicios por bloque, 2 rondas. Son 4 minutos por bloque.</p></div></div>
+        <div class="step"><b>03</b><div><h3>Enfría y marca tu calendario</h3><p>3 minutos de estiramientos y una casilla menos para terminar.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" style="background:#0b0b0b;border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head reveal"><div class="kicker">El plan</div><h2>3 semanas que <span class="or">suben de nivel</span></h2><p>Cada semana suma un poco de volumen. Si un día no puedes, retomas al día siguiente donde quedaste.</p></div>
+    <div class="weeks">
+      <article class="wk reveal"><span class="n">01</span><div class="tag">SEMANA 1 · BASE</div><h3>Cuerpo completo</h3><p>Aprendes los movimientos y el ritmo 20/10.</p><ul><li>2 bloques por sesión</li><li>Unos 16 minutos</li><li>Test inicial el Día 1</li></ul></article>
+      <article class="wk reveal"><span class="n">02</span><div class="tag">SEMANA 2 · CONSTRUYE</div><h3>Piernas y glúteos</h3><p>Sumas un tercer bloque, todo sin saltos para entrenar en departamento.</p><ul><li>3 bloques por sesión</li><li>Unos 20 minutos</li><li>Movilidad activa a mitad de semana</li></ul></article>
+      <article class="wk hot reveal"><span class="n">03</span><div class="tag">SEMANA 3 · SUPERA</div><h3>Cardio y abdomen</h3><p>La semana más intensa, con un final de 2 minutos en cada sesión.</p><ul><li>3 bloques + final 20/10</li><li>Unos 22 minutos</li><li>Test final el Día 21</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap inc">
+    <div class="mock reveal" aria-hidden="true">
+      <img class="m3" src="assets/pdf-semana1.jpg" alt="" loading="lazy">
+      <img class="m2" src="assets/pdf-calendario.jpg" alt="" loading="lazy">
+      <img class="m1" src="assets/pdf-portada.jpg" alt="" loading="lazy">
+    </div>
+    <div class="reveal">
+      <div class="kicker">Qué incluye el PDF</div>
+      <h2 style="font-size:clamp(40px,5.2vw,64px);font-weight:800;margin:10px 0 22px">Todo lo que necesitas <span class="or">en 10 páginas</span></h2>
+      <ul class="list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><div><b>21 rutinas, día por día</b><span>Entrenamientos, movilidad y descanso ya ordenados.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><div><b>Calendario para marcar</b><span>Para ver tu avance y no soltar.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><div><b>Test del Día 1 y del Día 21</b><span>Compara tus repeticiones y mide tu progreso.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><div><b>Guía de 36 ejercicios</b><span>Cómo se hace cada uno, con versión fácil y avanzada.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="blk" style="background:#0b0b0b;border-block:1px solid var(--line)" id="jona">
+  <div class="wrap about">
+    <div class="photos reveal">
+      <img class="p1" src="assets/jona.jpg" alt="Jona, entrenador de Jona Master Training" loading="lazy">
+      <img class="p2" id="fotoGrupo" src="assets/clase-funcional.jpg" alt="Clase de entrenamiento funcional de Jona Master Training" loading="lazy">
+    </div>
+    <div class="reveal">
+      <div class="kicker">Quién soy</div>
+      <h2 style="font-size:clamp(40px,5.2vw,64px);font-weight:800;margin-top:10px">Hola, soy <span class="or">Jona</span></h2>
+      <p>Soy entrenador y creador de Jona Master Training. Doy clases de entrenamiento funcional en grupo los martes y jueves, y acompaño a mis alumnos con entrenamiento personalizado.</p>
+      <p>Como tú, también tengo trabajo de oficina, así que sé lo que cuesta encontrar tiempo. Por eso armé este reto: rutinas cortas, sin equipo, que puedes hacer en el living de tu casa.</p>
+      <div class="quote">Aquí no importa tu edad ni tu condición física actual. Importan tus ganas de mejorar.</div>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="head reveal"><div class="kicker">Preguntas frecuentes</div><h2>Antes de <span class="or">partir</span></h2></div>
+    <div class="faq reveal">
+      <details><summary>¿Cuánto cuesta?</summary><p>Nada. El reto es gratis. Solo te pido tu nombre y tu WhatsApp para enviarte el PDF y acompañarte durante las 3 semanas.</p></details>
+      <details><summary>Nunca he entrenado, ¿me sirve?</summary><p>Sí. Está pensado para principiantes: cada ejercicio tiene una versión fácil y la primera semana es de aprendizaje. Si ya entrenas, usa las versiones avanzadas.</p></details>
+      <details><summary>¿Necesito pesas o máquinas?</summary><p>No. Solo un espacio del tamaño de una colchoneta. Una silla firme o una pared sirven para las versiones fáciles y para los fondos.</p></details>
+      <details><summary>Vivo en departamento, ¿hay saltos?</summary><p>No hay saltos. El cardio se hace con marchas, pasos laterales y golpes, así que no molestas a los vecinos.</p></details>
+      <details><summary>¿Cuánto dura cada sesión?</summary><p>Entre 16 y 22 minutos, contando el calentamiento y el enfriamiento.</p></details>
+      <details><summary>¿Qué hacen con mis datos?</summary><p>Los uso solo para enviarte el reto, rutinas y novedades de Jona Master Training. No los comparto con nadie y puedes pedir que te borre cuando quieras.</p></details>
+      <details><summary>¿Tengo alguna lesión o condición médica?</summary><p>Si tienes una lesión, una condición médica o estás embarazada, consulta con tu médico antes de partir. Y si algo duele durante un ejercicio, para.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <div class="kicker">Tu Día 1 puede ser mañana</div>
+    <h2>¿Partimos <span class="grad">juntos</span>?</h2>
+    <p>Descarga el reto, marca tu calendario y sigue las rutinas completas en mi canal de YouTube.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href="#formcard">Quiero mi reto gratis</a>
+      <a class="btn ghost" id="ytBtn" href="#" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Jona Master Training · Jonathan Martínez</span>
+    <span class="flinks"><a id="waFoot" href="#" target="_blank" rel="noopener">WhatsApp</a><a id="ytFoot" href="#" target="_blank" rel="noopener">YouTube</a><a href="mailto:coachjona88@gmail.com">coachjona88@gmail.com</a></span>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.7-.4z"/></svg></a>
+
+<script>
+/* ===== CONFIGURACIÓN (edita solo esto) ===== */
+const CONFIG = {
+  // URL de la Aplicación web de Google Apps Script (guarda los contactos en la planilla)
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzSLjq8uxRlJk83G5A3PztGVBvuHIA7AMZMEsOpbpOxZmw4aMakWnJPP59RKAtPYZuD/exec",
+  // WhatsApp con código de país, solo números. Ej: 56912345678
+  WHATSAPP: "56945988719",
+  // Link del canal de YouTube
+  YOUTUBE: "https://www.youtube.com/channel/UCeq8zVU5p6g0E5AxpVGbHGQ",
+  PDF: "Reto-20-10-21-dias-Jona-Master-Training.pdf",
+  MOSTRAR_FOTO_GRUPAL: true
+};
+/* =========================================== */
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+if (!CONFIG.MOSTRAR_FOTO_GRUPAL) { const g = document.getElementById('fotoGrupo'); g.src = 'assets/jona-sentadilla.jpg'; g.alt = 'Jona entrenando'; }
+
+// Enlaces de contacto
+const waLink = (txt) => CONFIG.WHATSAPP ? `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(txt)}` : null;
+const setLink = (id, url) => { const a = document.getElementById(id); if (!a) return; if (url) a.href = url; else a.style.display = 'none'; };
+setLink('waFoot', waLink('Hola Jona, vengo de la página del Reto 20/10'));
+setLink('ytBtn', CONFIG.YOUTUBE); setLink('ytFoot', CONFIG.YOUTUBE);
+if (CONFIG.WHATSAPP) { const f = document.getElementById('waFloat'); f.href = waLink('Hola Jona, tengo una consulta sobre el Reto 20/10'); f.style.display = 'grid'; }
+
+// Origen: de qué video llega la persona (?v=video1 o utm_source)
+const qs = new URLSearchParams(location.search);
+document.getElementById('origen').value = (qs.get('v') || qs.get('origen') || qs.get('utm_content') || qs.get('utm_source') || (document.referrer.includes('youtube') ? 'youtube' : 'directo')).slice(0, 60);
+
+// Formulario
+const form = document.getElementById('leadForm'), err = document.getElementById('err'), btn = document.getElementById('enviar');
+const tel = document.getElementById('whatsapp');
+tel.addEventListener('focus', () => { if (!tel.value) tel.value = '+56 9 '; });
+tel.addEventListener('blur', () => { if (tel.value.trim() === '+56 9') tel.value = ''; });
+
+function marcar(el, malo) { el.setAttribute('aria-invalid', malo ? 'true' : 'false'); }
+function capitalizar(s) { return s.trim().toLowerCase().replace(/(^|\s|-)\p{L}/gu, m => m.toUpperCase()); }
+
+form.addEventListener('submit', async (ev) => {
+  ev.preventDefault(); err.textContent = '';
+  const n = form.nombre, a = form.apellido, w = form.whatsapp, c = form.correo, ok = document.getElementById('acepto');
+  const digitos = w.value.replace(/\D/g, '');
+  const errores = [];
+  marcar(n, !n.value.trim()); if (!n.value.trim()) errores.push('tu nombre');
+  marcar(a, !a.value.trim()); if (!a.value.trim()) errores.push('tu apellido');
+  const telOk = digitos.length >= 8 && digitos.length <= 15; marcar(w, !telOk); if (!telOk) errores.push('un WhatsApp válido');
+  const mailOk = !c.value.trim() || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(c.value.trim()); marcar(c, !mailOk); if (!mailOk) errores.push('un correo válido (o déjalo vacío)');
+  if (errores.length) { err.textContent = 'Falta ' + errores.join(', ') + '.'; return; }
+  if (!ok.checked) { err.textContent = 'Marca la casilla para aceptar recibir el reto.'; return; }
+
+  btn.disabled = true; btn.textContent = 'Enviando…';
+  const datos = new URLSearchParams({ nombre: capitalizar(n.value), apellido: capitalizar(a.value), whatsapp: '+' + digitos, correo: c.value.trim().toLowerCase(), origen: form.origen.value, web: form.web.value });
+  try {
+    if (CONFIG.SCRIPT_URL) {
+      await fetch(CONFIG.SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: datos });
+    }
+  } catch (e) { /* aunque falle el registro, la persona recibe su reto */ }
+  document.getElementById('saludo').textContent = capitalizar(n.value).split(' ')[0];
+  const wd = document.getElementById('waDone'); const l = waLink(`Hola Jona, soy ${capitalizar(n.value)} ${capitalizar(a.value)}. ¡Descargué el Reto 20/10 y parto mañana!`);
+  if (l) wd.href = l; else wd.style.display = 'none';
+  document.getElementById('formcard').classList.add('sent');
+  document.getElementById('formcard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  try { const d = document.createElement('a'); d.href = CONFIG.PDF; d.download = ''; document.body.appendChild(d); d.click(); d.remove(); } catch (e) {}
+});
+
+// Temporizador demo 20/10
+(() => {
+  const ring = document.getElementById('ring'), num = document.getElementById('tnum'), lab = document.getElementById('tlab'), tt = document.getElementById('tt');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let fase = 'w', t = 20;
+  setInterval(() => {
+    t--;
+    if (t < 0) { fase = fase === 'w' ? 'r' : 'w'; t = fase === 'w' ? 20 : 10; }
+    const total = fase === 'w' ? 20 : 10;
+    num.textContent = t; lab.textContent = fase === 'w' ? 'ENTRENA' : 'DESCANSA';
+    tt.textContent = fase === 'w' ? '20 segundos a fondo' : '10 segundos para respirar';
+    ring.style.setProperty('--p', (t / total).toFixed(3));
+    ring.style.setProperty('--c', fase === 'w' ? '#FA5800' : '#f4f4f4');
+  }, 1000);
+  ring.style.setProperty('--p', 1);
+})();
+
+// Animación al hacer scroll
+const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
